@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Feedback & Support | Pediaveda</title>
+    <meta name="description"
+        content="Share your feedback, compliments, or concerns with Pediaveda. Help us improve our integrative child wellness experience." />
+    <link rel="icon" href="./assets/logo/logo.svg" type="image/svg+xml" />
+    <link rel="preload" href="./assets/logo/logo.svg" as="image" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+</head>
+
+<body>
+<header class="site-header">
+    <a class="brand" href="./index.html"><img src="./assets/logo/logo.svg" alt="Pediaveda" /></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-controls="mainNav" aria-expanded="false"></button>
+    <nav class="nav" id="mainNav">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li class="has-dd">
+                <a href="./about.html">About</a>
+                <div class="dd">
+                    <a href="./about.html#vision">Vision & Mission</a>
+                    <a href="./about.html#founder">Founder</a>
+                    <a href="./about.html#team">Team</a>
+                </div>
+            </li>
+            <li class="has-dd">
+                <a href="./services.html">Services</a>
+                <div class="dd">
+                    <a href="./services.html#developmental">Developmental Disorders</a>
+                    <a href="./services.html#nutrition">Growth & Nutrition</a>
+                    <a href="./services.html#behavioral">Behavioral & Emotional</a>
+                    <a href="./services.html#resp-allergy">Respiratory & Allergy</a>
+                    <a href="./services.html#skin-immune">Skin & Immunology</a>
+                    <a href="./services.html#recurrent">Recurrent Illnesses</a>
+                    <a href="./services.html#holistic">Holistic Programs</a>
+                </div>
+            </li>
+            <li class="has-dd">
+                <a href="./therapies.html">Therapies</a>
+                <div class="dd">
+                    <a href="./therapies.html#ayurvedic">Ayurvedic Treatment</a>
+                    <a href="./therapies.html#panchakarma">Pediatric Panchakarma</a>
+                    <a href="./therapies.html#physio">Physiotherapy</a>
+                    <a href="./therapies.html#speech">Speech Therapy</a>
+                    <a href="./therapies.html#behavior">Behavioral Therapy</a>
+                    <a href="./therapies.html#yoga">Yoga & Meditation</a>
+                    <a href="./therapies.html#diet">Diet & Lifestyle</a>
+                </div>
+            </li>
+            <li><a href="./programs.html">Special Programs</a></li>
+            <li><a href="./research.html">Research & Education</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./testimonials.html">Testimonials</a></li>
+            <li><a class="btn-primary" href="./appointments.html">Appointments</a></li>
+            <li><a class="btn-outline" href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main>
+    <section class="page-hero">
+        <div class="page">
+            <span class="eyebrow">Feedback</span>
+            <h1>Your experience helps us grow stronger</h1>
+            <p>Share compliments, suggestions, or concerns so we can continuously improve child and parent journeys at
+                Pediaveda.</p>
+        </div>
+    </section>
+
+    <section class="page">
+        <h2>How we respond</h2>
+        <div class="grid-2">
+            <div class="box">
+                <h3>24-hour acknowledgement</h3>
+                <p>Our care operations team reviews every submission and reaches out within one working day.</p>
+            </div>
+            <div class="box">
+                <h3>Structured follow-through</h3>
+                <p>Concerns are assigned to relevant leads, tracked to closure, and summarised back to you.</p>
+            </div>
+            <div class="box">
+                <h3>Your voice matters</h3>
+                <p>Feedback directly informs therapist training, facility upgrades, and communication processes.</p>
+            </div>
+            <div class="box">
+                <h3>Celebrate wins</h3>
+                <p>We love hearing positive stories—your gratitude notes fuel our team’s purpose.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="page" id="feedback-form">
+        <h2>Share Your Thoughts</h2>
+        <form class="form" method="post" action="mailto:feedback@pediaveda.in" enctype="text/plain">
+            <div class="form-grid">
+                <label>Your Name
+                    <input type="text" name="name" required />
+                </label>
+                <label>Child’s Name (optional)
+                    <input type="text" name="child_name" />
+                </label>
+                <label>Contact Email
+                    <input type="email" name="email" required />
+                </label>
+                <label>Phone
+                    <input type="tel" name="phone" />
+                </label>
+                <label>Service / Program Experienced
+                    <select name="service">
+                        <option value="">Select</option>
+                        <option>Developmental care</option>
+                        <option>Therapies</option>
+                        <option>Programs</option>
+                        <option>Appointments team</option>
+                        <option>Facilities</option>
+                        <option>Other</option>
+                    </select>
+                </label>
+                <label>Nature of Feedback
+                    <select name="feedback_type" required>
+                        <option value="">Select</option>
+                        <option>Appreciation</option>
+                        <option>Suggestion</option>
+                        <option>Concern</option>
+                        <option>Testimonial</option>
+                    </select>
+                </label>
+            </div>
+            <label>Your Message
+                <textarea name="message" rows="6" required placeholder="Tell us what went well or what can improve."></textarea>
+            </label>
+            <label>Would you like a callback?
+                <select name="callback">
+                    <option>No</option>
+                    <option>Yes, please call me</option>
+                </select>
+            </label>
+            <div class="form-actions">
+                <button class="btn-primary" type="submit">Submit Feedback</button>
+                <p class="form-note">We respect your privacy and only share testimonials with permission.</p>
+            </div>
+        </form>
+    </section>
+
+    <section class="banner">
+        <h2>Looking to submit a testimonial?</h2>
+        <p>We’d be honoured to feature your story on our testimonials page. Choose “Testimonial” above or email us.</p>
+        <a class="btn-primary" href="mailto:feedback@pediaveda.in">Email feedback@pediaveda.in</a>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <img src="./assets/logo/logo-dark.svg" alt="Pediaveda" class="footer-logo" />
+            <p>Ayurvedic & Multidisciplinary Child Wellness Centre dedicated to holistic growth and wellbeing.</p>
+            <div class="contact-mini">
+                <a href="tel:+91XXXXXXXXXX"><span class="contact-badge">Call</span>+91 XXXXX XXXXX</a>
+                <a href="mailto:hello@pediaveda.in"><span class="contact-badge">Mail</span>hello@pediaveda.in</a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul class="footer-menu">
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./therapies.html">Therapies</a></li>
+                <li><a href="./programs.html">Programs</a></li>
+                <li><a href="./appointments.html">Appointments</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Legal</h4>
+            <ul class="footer-menu">
+                <li><a href="./legal/privacy.html">Privacy Policy</a></li>
+                <li><a href="./legal/terms.html">Terms & Conditions</a></li>
+                <li><a href="./legal/refund.html">Refund / Cancellation</a></li>
+                <li><a href="./careers.html">Careers</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Find Us</h4>
+            <p>Clinic address line, City, State, PIN</p>
+            <a class="btn-footer" target="_blank" href="https://maps.google.com">Open in Google Maps</a>
+            <div class="socials">
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="YouTube">YT</a>
+                <a href="#" aria-label="Facebook">FB</a>
+            </div>
+        </div>
+    </div>
+    <p class="copy">© <span id="year"></span> Pediaveda. All rights reserved.</p>
+</footer>
+
+<script src="./js/app.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/lightbox.js"></script>
+
+</body>
+
+</html>
